@@ -1,5 +1,6 @@
 package programmer.zaman.now.collection;
 
+import java.util.Collections;
 import java.util.NavigableSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -17,5 +18,8 @@ public class NavigableSetApp {
         for (var name : kurniawan) {
             System.out.println(name);
         }
+
+        NavigableSet<String> immutable = Collections.unmodifiableNavigableSet(names);
+        immutable.add("Ups");
     }
 }
